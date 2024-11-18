@@ -60,3 +60,11 @@ Source-Age: 0
 [2024-11-18 16:12:58,381: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
 
 =================x]
+[2024-11-18 20:46:47,052: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-18 20:46:47,053: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 20:46:47,055: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-18 20:46:47,055: INFO: common: Directory artifacts created successfully]
+[2024-11-18 20:46:47,055: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-18 20:46:47,056: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
