@@ -68,3 +68,12 @@ Source-Age: 0
 [2024-11-18 20:46:47,056: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
 
 =================x]
+[2024-11-18 20:57:02,440: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-18 20:57:03,082: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<<]
+[2024-11-18 20:57:03,084: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 20:57:03,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-18 20:57:03,086: INFO: common: Directory artifacts created successfully]
+[2024-11-18 20:57:03,086: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-11-18 20:57:10,043: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<<
+
+=================x]
