@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Text_summarizer
+Version: 0.0.0
+Summary: A small package for summarizing text
+Home-page: https://github.com/saivardhan4694/Text_summarizer
+Author: saivardhan4694
+Author-email: makkapatimrk@gamil.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Text Summarizer Project -- complete end to end nlp project.
