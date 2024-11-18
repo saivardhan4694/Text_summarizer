@@ -77,3 +77,72 @@ Source-Age: 0
 [2024-11-18 20:57:10,043: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<<
 
 =================x]
+[2024-11-18 21:41:43,541: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-18 21:41:45,458: INFO: main: >>>>>>> stage Model Training  Stage started <<<<<<<<]
+[2024-11-18 21:41:45,460: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 21:41:45,462: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-18 21:41:45,463: INFO: common: Directory artifacts created successfully]
+[2024-11-18 21:41:45,463: ERROR: main: "'ConfigBox' object has no attribute 'model_trainer'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\repositories\Text_summarizer\main.py", line 41, in <module>
+    model_trainer.main()
+  File "d:\repositories\text_summarizer\src\textSummarizer\pipeline\stage_03_model_trainer.py", line 15, in main
+    raise e
+  File "d:\repositories\text_summarizer\src\textSummarizer\pipeline\stage_03_model_trainer.py", line 11, in main
+    model_trainer_config = config.get_model_trainer_config()
+  File "d:\repositories\text_summarizer\src\textSummarizer\config\configuration.py", line 60, in get_model_trainer_config
+    config = self.config.model_trainer
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+[2024-11-18 21:43:19,540: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-18 21:43:20,027: INFO: main: >>>>>>> stage Model Training  Stage started <<<<<<<<]
+[2024-11-18 21:43:20,027: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 21:43:20,027: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-18 21:43:20,027: INFO: common: Directory artifacts created successfully]
+[2024-11-18 21:43:20,027: INFO: common: Directory artifacts/model_trainer created successfully]
