@@ -1,0 +1,62 @@
+[2024-11-18 14:34:53,298: INFO: main: Hi, welocme to the text summarizer app.]
+[2024-11-18 16:11:34,103: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-18 16:11:34,103: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 16:11:34,103: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-18 16:11:34,103: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\repositories\text_summarizer\src\textSummarizer\utils\common.py", line 16, in read_yaml
+    return ConfigBox(data)
+  File "box\\box.py", line 296, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\repositories\Text_summarizer\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "d:\repositories\text_summarizer\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 17, in main
+    raise e
+  File "d:\repositories\text_summarizer\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+  File "d:\repositories\text_summarizer\src\textSummarizer\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_filepath)
+  File "d:\repositories\Text_summarizer\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\repositories\text_summarizer\src\textSummarizer\utils\common.py", line 18, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-11-18 16:12:55,923: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-18 16:12:55,923: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 16:12:55,923: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-18 16:12:55,923: INFO: common: Directory artifacts created successfully]
+[2024-11-18 16:12:55,923: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-18 16:12:58,301: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E1F3:33245C:23E55:2A293:673B1A30
+Accept-Ranges: bytes
+Date: Mon, 18 Nov 2024 10:42:57 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100028-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1731926577.558343,VS0,VE655
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: aa05b2e30a9618df7005a6806815ad6348a3fdf5
+Expires: Mon, 18 Nov 2024 10:47:57 GMT
+Source-Age: 0
+
+]
+[2024-11-18 16:12:58,381: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
