@@ -32,9 +32,11 @@ class ModelTrainer:
                   train_dataset=dataset_samsum_pt["test"], 
                   eval_dataset=dataset_samsum_pt["validation"])
         
-        trainer.train()
+        # trainer.train()
 
-        ## Save model
-        model_pegasus.save_pretrained(os.path.join(self.config.root_dir,"pegasus-samsum-model"))
-        ## Save tokenizer
-        tokenizer.save_pretrained(os.path.join(self.config.root_dir,"tokenizer"))
+        # ## Save model
+        # model_pegasus.save_pretrained(os.path.join(self.config.root_dir,"pegasus-samsum-model"))
+        # ## Save tokenizer
+        # tokenizer.save_pretrained(os.path.join(self.config.root_dir,"tokenizer"))
+
+        print("model trained.")

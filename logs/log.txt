@@ -146,3 +146,91 @@ box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'
 [2024-11-18 21:43:20,027: INFO: common: yaml file: params.yaml loaded successfully]
 [2024-11-18 21:43:20,027: INFO: common: Directory artifacts created successfully]
 [2024-11-18 21:43:20,027: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-11-18 22:29:16,279: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-18 22:39:53,105: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-18 22:39:53,625: INFO: main: >>>>>>> stage Model Evaluation  Stage started <<<<<<<<]
+[2024-11-18 22:39:53,627: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-18 22:39:53,628: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-18 22:39:53,629: INFO: common: Directory artifacts created successfully]
+[2024-11-18 22:39:53,629: INFO: common: Directory artifacts/model_evaluation created successfully]
+[2024-11-18 22:39:53,629: INFO: main: >>>>>>> stage Model Evaluation  Stage completed <<<<<<<<
+
+=================x]
+[2024-11-19 08:58:16,552: INFO: config: PyTorch version 2.5.1 available.]
+[2024-11-19 08:58:18,825: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-19 08:58:18,829: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-19 08:58:18,829: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-19 08:58:18,829: INFO: common: Directory artifacts created successfully]
+[2024-11-19 08:58:18,829: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-19 08:58:22,657: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 9DDD:347D96:C7B71:FE9B1:673C05D3
+Accept-Ranges: bytes
+Date: Tue, 19 Nov 2024 03:28:21 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100032-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1731986899.187669,VS0,VE2090
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c66d5b29c96fb742496e12ede4b4b1b47e1a5755
+Expires: Tue, 19 Nov 2024 03:33:21 GMT
+Source-Age: 2
+
+]
+[2024-11-19 08:58:22,811: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-19 08:58:22,811: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-19 08:58:22,816: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-19 08:58:22,820: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-19 08:58:22,821: INFO: common: Directory artifacts created successfully]
+[2024-11-19 08:58:22,821: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-19 08:58:22,824: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-19 08:58:22,824: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<<]
+[2024-11-19 08:58:22,828: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-19 08:58:22,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-19 08:58:22,832: INFO: common: Directory artifacts created successfully]
+[2024-11-19 08:58:22,832: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-11-19 08:58:25,167: WARNING: warnings: d:\repositories\Text_summarizer\venv\lib\site-packages\transformers\tokenization_utils_base.py:4114: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+]
+[2024-11-19 08:58:27,537: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-19 08:58:27,537: INFO: main: >>>>>>> stage Model Training  Stage started <<<<<<<<]
+[2024-11-19 08:58:27,541: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-19 08:58:27,541: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-19 08:58:27,545: INFO: common: Directory artifacts created successfully]
+[2024-11-19 08:58:27,545: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-11-19 09:03:49,010: WARNING: warnings: d:\repositories\Text_summarizer\venv\lib\site-packages\huggingface_hub\file_download.py:139: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\user\.cache\huggingface\hub\models--google--pegasus-cnn_dailymail. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+]
+[2024-11-19 09:03:56,442: WARNING: warnings: d:\repositories\text_summarizer\src\textSummarizer\components\model_trainer.py:30: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(model=model_pegasus, args=trainer_args,
+]
+[2024-11-19 09:03:59,098: INFO: main: >>>>>>> stage Model Training  Stage completed <<<<<<<<
+
+=================x]
+[2024-11-19 09:03:59,098: INFO: main: >>>>>>> stage Model Evaluation  Stage started <<<<<<<<]
+[2024-11-19 09:03:59,104: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-19 09:03:59,108: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-19 09:03:59,109: INFO: common: Directory artifacts created successfully]
+[2024-11-19 09:03:59,109: INFO: common: Directory artifacts/model_evaluation created successfully]
+[2024-11-19 09:03:59,109: INFO: main: >>>>>>> stage Model Evaluation  Stage completed <<<<<<<<
+
+=================x]
