@@ -65,7 +65,7 @@ class ConfigurationManager:
         config = self.config.model_trainer
         params = self.params.TrainingArguments
 
-        #create_directories([config.root_dir])
+        create_directories([config.root_dir])
 
         model_trainer_config = ModelTrainerConfig(
             root_dir=config.root_dir,
